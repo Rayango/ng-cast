@@ -1,5 +1,9 @@
 angular.module('video-player')
 
 .component('videoPlayer', {
-  // TODO
+  bindings: {
+
+  },
+
+  templateUrl: './src/templates/videoPlayer.html'
 });

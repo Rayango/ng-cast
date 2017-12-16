@@ -9,6 +9,10 @@ angular.module('video-player')
     this.video = window.exampleVideoData[0];
     this.videos = window.exampleVideoData;
 
+    this.onEntryClick = (video) => {
+      this.video = video;
+    };
+
     this.searchVideos = (query) => {
       youTube.search(query, (data) => {
         this.video = data[0];

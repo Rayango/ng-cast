@@ -1,12 +1,12 @@
 <div class="video-player">
   <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="{{'https://www.youtube.com/embed/' + $ctrl.video.id.videoId}}" allowFullScreen></iframe>
+    <iframe class="embed-responsive-item" src="{{'https://www.youtube.com/embed/' + $ctrl.video.id.videoId + '?autoplay=1'}}" allowFullScreen></iframe>
   </div>
   <div class="video-player-details">
-    <h3>{{$ctrl.video.snippet.title}}</h3>
-    <div>Views: {{$ctrl.videoData.viewCount}}</div>
-    <div>Likes: {{$ctrl.videoData.likeCount}}</div>
-    <div>Dislikes: {{$ctrl.videoData.dislikeCount}}</div>
+    <h4>{{$ctrl.video.snippet.title}}</h4>
+    <h6>Views: {{$ctrl.videoData.viewCount}}</h6>
+    <span>Likes: {{$ctrl.videoData.likeCount}}</span>
+    <span>Dislikes: {{$ctrl.videoData.dislikeCount}}</span>
     <div>{{$ctrl.video.snippet.description}}</div>
   </div>
 </div>

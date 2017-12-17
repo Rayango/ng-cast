@@ -9,6 +9,14 @@ body {
   margin-bottom: 20px;
 }
 
+#pagination button {
+  margin: 1%
+}
+
+#pagination {
+  text-align: center;
+}
+
 .navbar img {
   height: 40px;
   width: 50px;

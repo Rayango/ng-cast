@@ -5,7 +5,7 @@ angular.module('video-player')
       key: window.YOUTUBE_API_KEY,
       q: query,
       part: 'snippet',
-      maxResults: 10,
+      maxResults: 50,
       type: 'video',
       videoEmbeddable: 'true'
     };
@@ -28,7 +28,7 @@ angular.module('video-player')
     var data = {
       key: window.YOUTUBE_API_KEY,
       id: video.id.videoId,
-      part: 'statistics'
+      part: 'statistics, contentDetails'
     };
 
     $http({
@@ -36,9 +36,9 @@ angular.module('video-player')
       url: 'https://www.googleapis.com/youtube/v3/videos',
       params: data
     }).then(function success(data) {
-      console.log(data);
       console.log('success');
-      callback(data.data.items[0].statistics);
+      console.log(data);
+      callback(data.data.items[0]);
     }, function error(data) {
       console.log('error');
     });

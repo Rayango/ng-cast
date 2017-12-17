@@ -1,3 +1,16 @@
 <ul class="video-list">
   <video-list-entry ng-repeat="video in $ctrl.videos" video="video" on-entry-click="$ctrl.onEntryClick"><h5><em>videoListEntry</em> component goes here</h5></video-list-entry>
 </ul>
+<div id="pagination">
+  <button ng-click="$ctrl.onPageClick(0)">1</button> 
+  <button ng-click="$ctrl.onPageClick(1)">2</button> 
+  <button ng-click="$ctrl.onPageClick(2)">3</button>
+  <button ng-click="$ctrl.onPageClick(3)">4</button> 
+  <button ng-click="$ctrl.onPageClick(4)">5</button> 
+  <button ng-click="$ctrl.onPageClick(5)">6</button>
+  <button ng-click="$ctrl.onPageClick(6)">7</button> 
+  <button ng-click="$ctrl.onPageClick(7)">8</button> 
+  <button ng-click="$ctrl.onPageClick(8)">9</button>
+  <button ng-click="$ctrl.onPageClick(9)">10</button> 
+</div>
+
